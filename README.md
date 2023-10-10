@@ -49,7 +49,22 @@ In normal settings, assuming you’re using the timer module in PWM mode and gen
 
 
 ## Procedure:
-
+1. Open a new STM32 Project.
+2. Create IOC file using STM32F401RB.
+3. Select Timers followed by
+ 
+      Clock Sours -> Internal Clock
+   
+      Channel1 -> PWM Generation CH1
+4. Change the required things in Counter Settings,PWM Generation Channel1
+5. Select Clock Configuration and generate the code
+6. define the callback function
+7. Build Debug and Create 'hex.file'
+8. Open a new Proteus Project
+9. Select ports STM32F401RB and OSCILLOSCOPE.
+10. Connect PA0 to OSCILLOSCOPE(a).
+11. Check for execution of the output using run option
+12. followed by Calculate T-on, T-off, total time and duty time.
 
 
 
